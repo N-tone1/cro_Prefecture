@@ -176,4 +176,7 @@ footer {
     table {
         width: 100%; /* Na manjim ekranima, tablica će biti od kraja do kraja */
     }
+     h1{
+        margin-top: 40px;
+    }
 }
