@@ -8,11 +8,11 @@
 
 .logo {
     display: block;
-    max-width: 150px; /* Prilagodi veličinu */
+    max-width: 150px;
     height: auto;
     position: relative;
-    top: 40px; /* Podešavanje udaljenosti od vrha */
-    left: 20px; /* Podešavanje udaljenosti od lijevog ruba */
+    top: 40px;
+    left: 20px;
 }
 
 /* Style the body */
@@ -32,26 +32,24 @@ header {
 }
 
 /* Style navigation */
-nav {
-    ul {
-        list-style: none;
-        padding: 0;
-    }
+nav ul {
+    list-style: none;
+    padding: 0;
+}
 
-    ul li {
-        display: inline;
-        margin: 0 15px;
-    }
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-    ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
 
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 #filterPrefecture {
@@ -72,10 +70,9 @@ nav {
     border-color: #555;
 }
 
-
 /* Style main content */
 main {
-    min-height: 90vh; /* 100% of the viewport height */
+    min-height: 90vh;
     padding: 20px;
 }
 
@@ -93,12 +90,10 @@ pre {
     border-radius: 8px;
     display: inline-block;
     text-align: left;
-    white-space: pre-wrap; /* Ensures text wraps inside pre */
+    white-space: pre-wrap;
 }
 
 /* Style for my table */
-
-/* Kontrole */
 .controls {
     margin-bottom: 20px;
 }
@@ -118,10 +113,10 @@ button {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+}
 
-    &:hover {
-        background-color: #2C204A;
-    }
+button:hover {
+    background-color: #4e14d3;
 }
 
 /* Tablica */
@@ -133,42 +128,40 @@ table {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+}
 
-    thead {
-        background-color: #2C204A;
-        color: white;
-    }
+table thead {
+    background-color: #2C204A;
+    color: white;
+}
 
-    th, td {
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
-    }
+table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
 
-    th {
-        cursor: pointer; /* Ikonica ruke pri hoveru */
-        user-select: none; /* Onemogućava selektovanje teksta */
-        padding: 10px;
+table th {
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+}
 
-        span {
-            margin-left: 5px;
-            font-size: 14px;
+table th span {
+    margin-left: 5px;
+    font-size: 14px;
+}
 
-            &:hover {
-                padding: 10px;
-                background-color: #4e14d3; /* Lagana plava pozadina pri hoveru */
-            }
-        }
-    }
+table th span:hover {
+    background-color: #4e14d3;
+    padding: 10px;
+}
 
-    tbody {
-        tr:nth-child(odd) {
-            background-color: #f2f2f2;
-        }
+table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
 
-        tr:hover {
-            background-color: #d6e9ff;
-        }
-    }
+table tbody tr:hover {
+    background-color: #d6e9ff;
 }
 
 /* Style footer */
