@@ -1,0 +1,179 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    display: block;
+    max-width: 150px; /* Prilagodi veličinu */
+    height: auto;
+    position: relative;
+    top: 40px; /* Podešavanje udaljenosti od vrha */
+    left: 20px; /* Podešavanje udaljenosti od lijevog ruba */
+}
+
+/* Style the body */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Style the header */
+header {
+    background: #2C204A;
+    color: white;
+    padding: 20px;
+}
+
+/* Style navigation */
+nav {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+#filterPrefecture {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#filterPrefecture:hover {
+    border-color: #888;
+}
+
+#filterPrefecture:focus {
+    outline: none;
+    border-color: #555;
+}
+
+
+/* Style main content */
+main {
+    min-height: 90vh; /* 100% of the viewport height */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style the preformatted text */
+pre {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: left;
+    white-space: pre-wrap; /* Ensures text wraps inside pre */
+}
+
+/* Style for my table */
+
+/* Kontrole */
+.controls {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border: none;
+    background-color: #2C204A;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #2C204A;
+    }
+}
+
+/* Tablica */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+
+    thead {
+        background-color: #2C204A;
+        color: white;
+    }
+
+    th, td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        cursor: pointer; /* Ikonica ruke pri hoveru */
+        user-select: none; /* Onemogućava selektovanje teksta */
+        padding: 10px;
+
+        span {
+            margin-left: 5px;
+            font-size: 14px;
+
+            &:hover {
+                padding: 10px;
+                background-color: #4e14d3; /* Lagana plava pozadina pri hoveru */
+            }
+        }
+    }
+
+    tbody {
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #d6e9ff;
+        }
+    }
+}
+
+/* Style footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+}

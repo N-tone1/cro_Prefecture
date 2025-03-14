@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="/styles.css">
+</head> 
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+<a href="index.html"><img src="./slike/Falcon-logo.png" alt="Logo firme" class="logo"></a>
+
+
+
+<body>
+    
+    <h1>Hrvatski Pozivni Brojevi</h1>
+    
+   
+    <div class="controls">
+        <input type="text" id="search" placeholder="Pretraži po gradu..." oninput="filterTable()">
+        <button onclick="sortTable('city','sortCity')">Sortiraj po gradu</button>
+        <button onclick="sortTable('prefecture_name','sortPrefecture')">Sortiraj po županiji</button>
+        <select id="filterPrefecture" onchange="filterByPrefecture()" class="controls">
+            <option  value="">Sve županije</option>
+        </select>
+    </div>
+
+    <div class="controls">
+        <input type="text" id="newId" placeholder="ID">
+        <input type="text" id="newPozivniBroj" placeholder="Pozivni broj">
+        <input type="text" id="newGrad" placeholder="Grad">
+        <input type="text" id="newZupanija" placeholder="Županija">
+        <button onclick="addEntry()">Dodaj Novo</button>
+    </div>
+    
+            
+    <table id="pozivniBrojevi">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Pozivni Broj</th>
+                <th id="sortCity">Grad <span>⬍</span></th>
+                <th id="sortPrefecture">Županija <span>⬍</span></th>
+                <th>Akcije</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Redovi će biti generirani pomoću JavaScript-a -->
+        </tbody>
+    </table>
+
+   
+    <script src="script.js"></script>
+    
+   
+</body>    
+<footer>
+    <p>&copy; 2025 Tony's Website</p>
+</footer>
+</html>
